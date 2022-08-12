@@ -1,0 +1,137 @@
+.footer-wrapper {
+    background-color: $grey-bg;
+}
+
+.footer__bar {
+    height: 2px;
+    width: 100%;
+    background-color: $grey-separator;
+    margin-bottom: 30px;
+}
+
+.footer__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $main-regular;
+    margin-bottom: 10px;
+}
+
+.footer__link {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $active-regular;
+    text-decoration: none;
+    margin-bottom: 31px;
+}
+
+.footer__link:hover {
+    color: $accent;
+}
+
+.footer__fb-icon {
+    background-image: url('../img/fb-foot.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 38px;
+    height: 38px;
+}
+
+.footer__fb-icon:hover {
+    background-image: url('../img/fb-foot-hover.svg');
+}
+
+.footer__phone {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: $main-alt;
+    text-decoration: none;
+}
+
+.footer__phone:hover,
+.footer__email:hover {
+    color: $accent;
+}
+
+.footer__email {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: $active-regular;
+}
+
+.footer__copyright {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: $grey-text;
+    margin: 30px 0;
+}
+
+.footer__block0,
+.footer__block1,
+.footer__block2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__block2 {
+    height: 100px;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__block0 {
+        display: grid;
+        grid-template-columns: 1f 1fr;
+        grid-template-rows: min-content min-content;
+    }
+
+    .footer__block1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        flex-direction: row;
+    }
+
+    .footer__link,
+    .footer__text,
+    .footer__fb-icon,
+    .footer__phone,
+    .footer__email {
+        margin: 0;
+    }
+
+    .footer__text,
+    .footer__fb-icon,
+    .footer__phone,
+    .footer__email  {
+        margin-right: 26px ;
+    }
+
+    .footer__block2 {
+        grid-column: 1 / -1;
+        grid-row: 2 / -1;
+        margin-top: 21px;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .footer__copyright {
+        grid-column: 2 / -1;
+        grid-row: 1 / 2;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .footer__copyright {
+        margin: 0;
+    }
+}

@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.body {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-style: normal;
+    position: relative;
+}
+
+.main-bg-gradient {
+    border-radius: 0 0 12px 12px;
+    background-image: $gradient-supersoft;
+    background-repeat: no-repeat;
+}
+
+html {
+    min-width: 375px;
+}
+
+.container {
+    max-width: 1280px;
+    min-width: 375px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.container--header {
+    padding: 0 15px;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.intoduction {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+}
+
+.hero {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    color: $gradient-red-text;
+}
+
+@media screen and (max-width: 767px) {
+    .hero {
+        font-size: 30px;
+        line-height: 37px;
+        color: $gradient-red-text-reversed;
+    }
+}
+
+.h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: $main-regular;
+}
+
+@media screen and (max-width: 767px) {
+    .h2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+.h3 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: $main-regular;
+}
+
+.h3-caps {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $main-regular;
+}
+
+.h4 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: $main-regular;
+}
+
+.p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $black;
+}
+
+@media screen and (min-width: 768px) {
+
+    .container,
+    .container--header {
+        padding: 0 60px;
+    }
+
+    .body-bg-img {
+        background-size: auto 1024px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .body-bg-img {
+        background-size: auto 768px;
+    }
+}
